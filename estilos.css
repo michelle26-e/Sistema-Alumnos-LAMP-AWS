@@ -1,0 +1,164 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.contenedor {
+    width: 94%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.encabezado, .barra, .buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.encabezado {
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0 0 10px;
+    color: #0f172a;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+p, footer {
+    color: #64748b;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px #00000010;
+}
+
+.buscador {
+    margin: 25px 0;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secundario {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.btn-editar {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.btn-eliminar {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.contador {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #f8fafc;
+    text-align: left;
+    padding: 15px;
+    color: #475569;
+}
+
+td {
+    padding: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.vacio {
+    text-align: center;
+    padding: 35px;
+    color: #64748b;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+}
+
+@media (max-width: 700px) {
+    .encabezado, .barra, .buscador {
+        flex-wrap: wrap;
+    }
+}
+
+
+.formulario {
+    max-width: 650px;
+    margin: auto;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.formulario button {
+    margin-top: 15px;
+}
+
+.mensaje-error {
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+    padding: 12px;
+}
